@@ -1,7 +1,0 @@
-<!DOCTYPE recetario [
-<!ELEMENT recetas (receta*)>
-<!ELEMENT receta (nombre,ingredientes,pasos)>
-<!ELEMENT nombre (#PCDATA)>
-<!ELEMENT ingredientes (ingrediente+)>
-<!ELEMENT ingrediente (nombre,cantidad)>
-<!ATTLIST receta tipo #IMPLIED>
