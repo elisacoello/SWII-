@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recetas SYSTEM "DTD.dtd" >
+<recetas>
+  <receta dificultad="facil" tipo="mediterranea">
+    <nombreReceta>Ensalada</nombreReceta>
+    <ingredientes>
+      <ingrediente>
+        <nombreIngrediente>nombreIngrediente</nombreIngrediente>
+        <cantidad>cantidad</cantidad>
+      </ingrediente>
+    </ingredientes>
+    <pasos>
+      <paso>paso</paso>
+    </pasos>
+  </receta>
+  
+  <receta dificultad="" tipo="idvalue0">
+    <nombreReceta>nombreReceta</nombreReceta>
+    <ingredientes>
+      <ingrediente>
+        <nombreIngrediente>nombreIngrediente</nombreIngrediente>
+        <cantidad>cantidad</cantidad>
+      </ingrediente>
+    </ingredientes>
+    <pasos>
+      <paso>paso</paso>
+    </pasos>
+  </receta>
+  
+</recetas>
