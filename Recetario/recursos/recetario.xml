@@ -14,7 +14,7 @@
     </pasos>
   </receta>
   
-  <receta dificultad="" tipo="idvalue0">
+  <receta dificultad="media" tipo="idvalue0">
     <nombreReceta>nombreReceta</nombreReceta>
     <ingredientes>
       <ingrediente>
