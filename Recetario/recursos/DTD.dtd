@@ -1,4 +1,4 @@
-<!ELEMENT recetas (receta*)>
+<!ELEMENT recetario (receta*)>
 <!ELEMENT receta (nombreReceta,ingredientes,pasos)>
 <!ELEMENT nombreReceta (#PCDATA)>
 <!ELEMENT ingredientes (ingrediente+)>

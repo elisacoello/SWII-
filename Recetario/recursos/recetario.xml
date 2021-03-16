@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE recetas SYSTEM "DTD.dtd" >
-<recetas>
+<!DOCTYPE recetario SYSTEM "DTD.dtd" >
+<recetario>
   <receta dificultad="facil" tipo="mediterranea">
     <nombreReceta>Ensalada</nombreReceta>
     <ingredientes>
@@ -27,4 +27,4 @@
     </pasos>
   </receta>
   
-</recetas>
+</recetario>
