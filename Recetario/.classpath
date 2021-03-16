@@ -7,5 +7,8 @@
 	<classpathentry kind="lib" path="D:/GISI+ADE/cuarto/cuatri2/SistemasWeb/OneDrive_1_4-3-2021/jaxb-impl-2.3.3.jar"/>
 	<classpathentry kind="lib" path="D:/GISI+ADE/cuarto/cuatri2/SistemasWeb/OneDrive_1_4-3-2021/saxon9he.jar"/>
 	<classpathentry kind="lib" path="D:/GISI+ADE/cuarto/cuatri2/SistemasWeb/OneDrive_1_4-3-2021/saxon9-xqj.jar"/>
+	<classpathentry kind="lib" path="/sw2_2021_repository/Empresa/lib/saxon9-xqj.jar"/>
+	<classpathentry kind="src" path="/sw2_2021_repository"/>
+	<classpathentry kind="lib" path="/sw2_2021_repository/Empresa/lib/jakarta.xml.bind-api-2.3.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
