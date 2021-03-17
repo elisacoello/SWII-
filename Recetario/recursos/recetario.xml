@@ -2,29 +2,148 @@
 <!DOCTYPE recetario SYSTEM "DTD.dtd" >
 <recetario>
   <receta dificultad="facil" tipo="mediterranea">
-    <nombreReceta>Ensalada</nombreReceta>
-    <ingredientes>
+    <nombreReceta>Ensalada de maíz y pollo</nombreReceta>
+    <ingredientes>	
       <ingrediente>
-        <nombreIngrediente>nombreIngrediente</nombreIngrediente>
-        <cantidad>cantidad</cantidad>
+        <nombreIngrediente> Maíz dulce </nombreIngrediente>
+		<nombreIngrediente>Pimentón</nombreIngrediente>
+		<nombreIngrediente>Comino</nombreIngrediente>
+		<nombreIngrediente>Prechuga de pollo</nombreIngrediente>
+		<nombreIngrediente>Lechuga</nombreIngrediente>
+		<nombreIngrediente>Tomate</nombreIngrediente>
+		<nombreIngrediente>Queso de cabra</nombreIngrediente>
+		<nombreIngrediente>Aceite de oliva</nombreIngrediente>
+		<nombreIngrediente>Pimienta</nombreIngrediente>
+		<nombreIngrediente>Sal</nombreIngrediente>
+        <cantidad>1 mazorca</cantidad>
+		<cantidad>1/2 cucharada</cantidad>
+		<cantidad>1 pechuga</cantidad>
+		<cantidad>1 unidad</cantidad>
+		<cantidad>3 unidades</cantidad>
+		<cantidad>30 gramos</cantidad>
+		<cantidad>Al gusto</cantidad>
+		<cantidad>Al gusto</cantidad>
+		<cantidad>Al gusto</cantidad>
       </ingrediente>
     </ingredientes>
     <pasos>
-      <paso>paso</paso>
+      <paso>Cocinar el maíz con sal, alrededor de 15-20 minutos</paso>
+	  <paso>Cocinar a la plancha la pechuga de pollo</paso>
+	  <paso>Añadir las especias en la misma sartén y saltear 8-10 minutos</paso>
+	  <paso>Lavar la lechuca y cortar el pollo en tiras</paso>
+	  <paso>Lavar y cortar el tomate</paso>
+	  <paso>Colocar la lechuga con el maíz, el tomate y el pollo</paso>
+	  <paso>Añadir el queso de cabra y aliñar al gusto</paso>
     </pasos>
   </receta>
   
-  <receta dificultad="media" tipo="idvalue0">
-    <nombreReceta>nombreReceta</nombreReceta>
+  <receta dificultad="media" tipo="mediterranea">
+    <nombreReceta>Crema de calabaza</nombreReceta>
     <ingredientes>
       <ingrediente>
-        <nombreIngrediente>nombreIngrediente</nombreIngrediente>
-        <cantidad>cantidad</cantidad>
+        <nombreIngrediente> Calabaza pelada </nombreIngrediente>
+		<nombreIngrediente>Eneldo</nombreIngrediente>
+		<nombreIngrediente>Caldo de verduras</nombreIngrediente>
+		<nombreIngrediente>Nata líquida</nombreIngrediente>
+        <cantidad>500 gramos</cantidad>
+		<cantidad>400-500ml</cantidad>
       </ingrediente>
     </ingredientes>
     <pasos>
-      <paso>paso</paso>
+      <paso>Colocar la calabaza en trozos en una cacelora y añadir el eneldo sin tallos</paso>
+	  <paso>Se añade el caldo de verduras</paso>
+	  <paso>Cuando empiece a hervir, se baja a temperatura suave durante alrededor de 20 minutos</paso>
+	  <paso>Cuando la calabaza este tierna, se saca y se tritura</paso>
+	  <paso>Listo para servir</paso>
     </pasos>
   </receta>
+  <receta dificultad="fácil" tipo="mediterranea">
+    <nombreReceta>San Jacobo casero</nombreReceta>
+    <ingredientes>
+      <ingrediente>
+        <nombreIngrediente> Jamon cocido en lonchas </nombreIngrediente>
+		<nombreIngrediente> Queso cocido en lonchas </nombreIngrediente>
+		<nombreIngrediente>Harina</nombreIngrediente>
+		<nombreIngrediente>Huevo</nombreIngrediente>
+		<nombreIngrediente>Pan rallado</nombreIngrediente>
+		<nombreIngrediente>Aceite de oliva para freir</nombreIngrediente>
+        <cantidad>150 gramos</cantidad>
+		<cantidad>5 lonchas</cantidad>
+		<cantidad>30 gramos</cantidad>
+		<cantidad>2 unidades</cantidad>
+		<cantidad>100 gramos</cantidad>
+      </ingrediente>
+    </ingredientes>
+    <pasos>
+      <paso>Cortar las lonchas de jamón en cuadrados de igual tamaño</paso>
+	  <paso>Cortar las lonchas de queso en cuadrados iguales </paso>
+	  <paso>Cubrir las lonchas de queso con las de jamon y lo pasamos por harina, huevo batido y pan rallado</paso>
+	  <paso>Calentar una sarten con aceite y freir los san jacobos</paso>
+	  <paso>Listo para servir</paso>
+    </pasos>
+  </receta>
+  <receta dificultad="medio" tipo="mediterranea">
+    <nombreReceta>Salmon al horno</nombreReceta>
+    <ingredientes>
+      <ingrediente>
+        <nombreIngrediente> lomo de salmon </nombreIngrediente>
+		<nombreIngrediente> patatas peladas</nombreIngrediente>
+		<nombreIngrediente>pimiento verde</nombreIngrediente>
+		<nombreIngrediente>cebolletas</nombreIngrediente>
+		<nombreIngrediente>tomates</nombreIngrediente>
+		<nombreIngrediente>vino blanco</nombreIngrediente>
+		<nombreIngrediente>aceite de oliva</nombreIngrediente>
+		<nombreIngrediente>sal</nombreIngrediente>
+		<nombreIngrediente>pimienta negra</nombreIngrediente>
+        <cantidad>1 kilogramo</cantidad>
+		<cantidad>2 unidades</cantidad>
+		<cantidad>1 unidad</cantidad>
+		<cantidad>2 unidades</cantidad>
+		<cantidad>2 unidades</cantidad>
+      </ingrediente>
+    </ingredientes>
+    <pasos>
+      <paso>Cortar las patatas, el pimiento, la cebolleta y el tomate en rodajas</paso>
+	  <paso>Distribuir todo en la bandeja de horno y sazonar. Añadir un poco de aceite, agua y vino blanco </paso>
+	  <paso>Hornear a 190º durante 20 minutos</paso>
+	  <paso>Colocar el salmon en la bandeja</paso>
+	  <paso>Dejar que se cocine alrededor de unos 10 minutos en el horno</paso>
+    </pasos>
+  </receta>
+   <receta dificultad="medio" tipo="mediterranea">
+    <nombreReceta>Salmon al horno</nombreReceta>
+    <ingredientes>
+      <ingrediente>
+        <nombreIngrediente>arroz </nombreIngrediente>
+		<nombreIngrediente>zanahoria</nombreIngrediente>
+		<nombreIngrediente>gambas</nombreIngrediente>
+		<nombreIngrediente>guisantes</nombreIngrediente>
+		<nombreIngrediente>jamón de york</nombreIngrediente>
+		<nombreIngrediente>huevos</nombreIngrediente>
+		<nombreIngrediente>salsa de soja</nombreIngrediente>
+		<nombreIngrediente>azucar</nombreIngrediente>
+		<nombreIngrediente>aceite de oliva</nombreIngrediente>
+        <cantidad>400 gramos</cantidad>
+		<cantidad>1 unidad</cantidad>
+		<cantidad>150 gramos</cantidad>
+		<cantidad>75 gramos</cantidad>
+		<cantidad>75 gramos</cantidad>
+		<cantidad>2 unidades</cantidad>
+		<cantidad>20 ml</cantidad>
+		<cantidad>10 gramos</cantidad>
+		<cantidad>20 ml</cantidad>
+      </ingrediente>
+    </ingredientes>
+    <pasos>
+      <paso>Cortar la zanahoria en tacos pequeños y ponerla a cocer en una cacerola con agua</paso>
+	  <paso>Batir los huevos con sal y una cucharada de azucar preparando una tortilla francesa en una sarten con aceite de oliva</paso>
+	  <paso>Mientras en otro cazo, con agua ponemos el arroz a cocer 10 minutos.</paso>
+	  <paso>Mientras cuece cortamos el jamón</paso>
+	  <paso>Saltear las ga,bas en una sarten</paso>
+	  <paso>Una vez hecho esto, escurrimos el arroz y mezclamos todos los ingredientes. La salsa de soja se puede añadir de la misma manera o disponerla a parte</paso>	  
+    </pasos>
+  </receta>
+  
+  
   
 </recetario>
