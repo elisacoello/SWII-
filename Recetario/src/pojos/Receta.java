@@ -29,7 +29,8 @@ public class Receta implements Serializable {
 	@XmlElementWrapper(name = "ingredientes")
 	private ArrayList<Ingrediente> ingredientes;
 	
-	@XmlElement(name="instrucciones")
+	@XmlElement
+	private String instrucciones;
 
 	@XmlTransient
 	private Recetario recetario;
@@ -86,6 +87,14 @@ public class Receta implements Serializable {
 	
 	public void removeIngrediente(Ingrediente i) {
 		ingredientes.remove(i);
+	}
+	
+	public String getInstrucciones() {
+		return instrucciones;
+	}
+
+	public void setInstrucciones(String instrucciones) {
+		this.instrucciones = instrucciones;
 	}
 	
 	
