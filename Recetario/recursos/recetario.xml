@@ -6,23 +6,42 @@
     <ingredientes>	
       <ingrediente>
         <nombreIngrediente> Maíz dulce </nombreIngrediente>
+		<cantidad>1 mazorca</cantidad>
+	 </ingrediente>
+	 <ingrediente>
 		<nombreIngrediente>Pimentón</nombreIngrediente>
-		<nombreIngrediente>Comino</nombreIngrediente>
-		<nombreIngrediente>Prechuga de pollo</nombreIngrediente>
-		<nombreIngrediente>Lechuga</nombreIngrediente>
-		<nombreIngrediente>Tomate</nombreIngrediente>
-		<nombreIngrediente>Queso de cabra</nombreIngrediente>
-		<nombreIngrediente>Aceite de oliva</nombreIngrediente>
-		<nombreIngrediente>Pimienta</nombreIngrediente>
-		<nombreIngrediente>Sal</nombreIngrediente>
-        <cantidad>1 mazorca</cantidad>
 		<cantidad>1/2 cucharada</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>Comino</nombreIngrediente>
+		<cantidad>1/2 cucharada</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>Prechuga de pollo</nombreIngrediente>
 		<cantidad>1 pechuga</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>Lechuga</nombreIngrediente>
 		<cantidad>1 unidad</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>Tomate</nombreIngrediente>
 		<cantidad>3 unidades</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>Queso de cabra</nombreIngrediente>
 		<cantidad>30 gramos</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>Aceite de oliva</nombreIngrediente>
 		<cantidad>Al gusto</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>Pimienta</nombreIngrediente>
 		<cantidad>Al gusto</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>Sal</nombreIngrediente>		
 		<cantidad>Al gusto</cantidad>
       </ingrediente>
     </ingredientes>
@@ -42,11 +61,19 @@
     <ingredientes>
       <ingrediente>
         <nombreIngrediente> Calabaza pelada </nombreIngrediente>
+		 <cantidad>500 gramos</cantidad>
+	 </ingrediente>
+	 <ingrediente>
 		<nombreIngrediente>Eneldo</nombreIngrediente>
+		<cantidad>1 unidad</cantidad>
+	 </ingrediente>
+	 <ingrediente>
 		<nombreIngrediente>Caldo de verduras</nombreIngrediente>
-		<nombreIngrediente>Nata líquida</nombreIngrediente>
-        <cantidad>500 gramos</cantidad>
 		<cantidad>400-500ml</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>Nata líquida</nombreIngrediente>
+       <cantidad>1 unidad</cantidad>
       </ingrediente>
     </ingredientes>
     <pasos>
@@ -62,17 +89,28 @@
     <ingredientes>
       <ingrediente>
         <nombreIngrediente> Jamon cocido en lonchas </nombreIngrediente>
+		<cantidad>150 gramos</cantidad>
+	 </ingrediente>
+	 <ingrediente>
 		<nombreIngrediente> Queso cocido en lonchas </nombreIngrediente>
-		<nombreIngrediente>Harina</nombreIngrediente>
-		<nombreIngrediente>Huevo</nombreIngrediente>
-		<nombreIngrediente>Pan rallado</nombreIngrediente>
-		<nombreIngrediente>Aceite de oliva para freir</nombreIngrediente>
-        <cantidad>150 gramos</cantidad>
 		<cantidad>5 lonchas</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>Harina</nombreIngrediente>
 		<cantidad>30 gramos</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>Huevo</nombreIngrediente>
 		<cantidad>2 unidades</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>Pan rallado</nombreIngrediente>
 		<cantidad>100 gramos</cantidad>
-      </ingrediente>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>Aceite de oliva para freir</nombreIngrediente>
+		<cantidad></cantidad>
+     </ingrediente>
     </ingredientes>
     <pasos>
       <paso>Cortar las lonchas de jamón en cuadrados de igual tamaño</paso>
@@ -87,19 +125,39 @@
     <ingredientes>
       <ingrediente>
         <nombreIngrediente> lomo de salmon </nombreIngrediente>
+		<cantidad>1 kilogramo</cantidad>
+	 </ingrediente>
+	 <ingrediente>
 		<nombreIngrediente> patatas peladas</nombreIngrediente>
+		<cantidad>2 unidades</cantidad>
+	 </ingrediente>
+	 <ingrediente>
 		<nombreIngrediente>pimiento verde</nombreIngrediente>
-		<nombreIngrediente>cebolletas</nombreIngrediente>
-		<nombreIngrediente>tomates</nombreIngrediente>
-		<nombreIngrediente>vino blanco</nombreIngrediente>
-		<nombreIngrediente>aceite de oliva</nombreIngrediente>
-		<nombreIngrediente>sal</nombreIngrediente>
-		<nombreIngrediente>pimienta negra</nombreIngrediente>
-        <cantidad>1 kilogramo</cantidad>
-		<cantidad>2 unidades</cantidad>
 		<cantidad>1 unidad</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>cebolletas</nombreIngrediente>
 		<cantidad>2 unidades</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>tomates</nombreIngrediente>
 		<cantidad>2 unidades</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>vino blanco</nombreIngrediente>
+		<cantidad>Al gusto</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>aceite de oliva</nombreIngrediente>
+		<cantidad></cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>sal</nombreIngrediente>
+		<cantidad></cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>pimienta negra</nombreIngrediente>
+		<cantidad></cantidad>
       </ingrediente>
     </ingredientes>
     <pasos>
@@ -115,22 +173,38 @@
     <ingredientes>
       <ingrediente>
         <nombreIngrediente>arroz </nombreIngrediente>
+		<cantidad>400 gramos</cantidad>
+	 </ingrediente>
+	 <ingrediente>
 		<nombreIngrediente>zanahoria</nombreIngrediente>
-		<nombreIngrediente>gambas</nombreIngrediente>
-		<nombreIngrediente>guisantes</nombreIngrediente>
-		<nombreIngrediente>jamón de york</nombreIngrediente>
-		<nombreIngrediente>huevos</nombreIngrediente>
-		<nombreIngrediente>salsa de soja</nombreIngrediente>
-		<nombreIngrediente>azucar</nombreIngrediente>
-		<nombreIngrediente>aceite de oliva</nombreIngrediente>
-        <cantidad>400 gramos</cantidad>
 		<cantidad>1 unidad</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>gambas</nombreIngrediente>
 		<cantidad>150 gramos</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>guisantes</nombreIngrediente>
 		<cantidad>75 gramos</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>jamón de york</nombreIngrediente>
 		<cantidad>75 gramos</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>huevos</nombreIngrediente>
 		<cantidad>2 unidades</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>salsa de soja</nombreIngrediente>
 		<cantidad>20 ml</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>azucar</nombreIngrediente>
 		<cantidad>10 gramos</cantidad>
+	 </ingrediente>
+	 <ingrediente>
+		<nombreIngrediente>aceite de oliva</nombreIngrediente>
 		<cantidad>20 ml</cantidad>
       </ingrediente>
     </ingredientes>
