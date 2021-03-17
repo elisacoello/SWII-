@@ -29,6 +29,8 @@ public class Receta implements Serializable {
 	@XmlElementWrapper(name = "ingredientes")
 	private ArrayList<Ingrediente> ingredientes;
 	
+	@XmlElement(name="instrucciones")
+
 	@XmlTransient
 	private Recetario recetario;
 	
