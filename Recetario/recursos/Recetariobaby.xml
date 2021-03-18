@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE recetario SYSTEM "DTD.dtd">
+<recetario>
+    <receta dificultad="facil" tipo="mediterranea">
+        <nombreReceta>Ensalada de maiz y pollo</nombreReceta>
+        <ingredientes>
+            <ingrediente>
+                <nombreIngrediente>Pollo</nombreIngrediente>
+                <cantidad>0.0</cantidad>
+            </ingrediente>
+        </ingredientes>
+        <instrucciones>Cocinar el maiz con sal</instrucciones>
+    </receta>
+</recetario>

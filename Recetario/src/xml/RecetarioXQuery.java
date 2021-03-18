@@ -23,7 +23,7 @@ public class RecetarioXQuery {
 		try {
 		    inputStream = new FileInputStream(queryFile);
 		} catch (FileNotFoundException ex) {
-		    Logger.getLogger(TestXQuery.class.getName()).log(Level.SEVERE, null, ex);
+		    Logger.getLogger(RecetarioXQuery.class.getName()).log(Level.SEVERE, null, ex);
 		}
 		XQPreparedExpression exp = xqjc.prepareExpression(inputStream);
 		XQResultSequence result = exp.executeQuery();
