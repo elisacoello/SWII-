@@ -9,8 +9,8 @@
         <cantidad>cantidad</cantidad>
       </ingrediente>
     </ingredientes>
-    <pasos>
-      <paso>paso</paso>
-    </pasos>
+    <instrucciones>
+      paso
+    </instrucciones>
   </receta>
 </recetario>

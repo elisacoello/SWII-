@@ -8,6 +8,7 @@ import java.util.logging.Logger;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 
 import logging.MyLogger;
 import pojos.Ingrediente;
@@ -21,8 +22,7 @@ public class XMLTest {
 		Recetario rec = generarRecetario();
 		LOGGER.warning("Mensaje de warning");
 		//marshalling(rec);
-		//unMarshalling();
-		System.out.println(rec.toString());
+		unMarshalling();
 	}
 	
 	private static Recetario generarRecetario(){
@@ -68,7 +68,7 @@ public class XMLTest {
 		// Creamos el JAXBMarshaller
 		Unmarshaller jaxbU = jaxbC.createUnmarshaller();
 		// Leyendo un fichero
-		File XMLfile = new File("./xml/Recetario1.xml");
+		File XMLfile = new File("./recursos/Recetario.xml");
 		// Creando el objeto
 		Recetario rec1 = (Recetario) jaxbU.unmarshal(XMLfile);
 		// Escribiendo por pantalla el objeto
