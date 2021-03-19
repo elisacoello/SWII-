@@ -36,7 +36,7 @@ public class XMLTest {
 		ArrayList<Ingrediente> ingredientes = new ArrayList<>(); 
 		Ingrediente ingrediente = new Ingrediente();
 		
-		ingrediente.setCantidad(0);
+		ingrediente.setCantidad("0");
 		ingrediente.setNombreIngrediente("Pollo");
 		ingrediente.setReceta(receta);
 				

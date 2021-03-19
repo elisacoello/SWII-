@@ -19,7 +19,7 @@ public class Ingrediente implements Serializable {
 	@XmlElement
 	private String nombreIngrediente;
 	@XmlElement
-	private float cantidad;
+	private String cantidad;
 	
 	@XmlTransient
 	private Receta receta;
@@ -29,18 +29,20 @@ public class Ingrediente implements Serializable {
 	}
 	
 
-	public Ingrediente(String nombreIngrediente, float cantidad) {
+	public Ingrediente(String nombreIngrediente, String cantidad) {
 		super();
 		this.nombreIngrediente = nombreIngrediente;
 		this.cantidad = cantidad;
 	}
 
 	
+
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + Float.floatToIntBits(cantidad);
+		result = prime * result + ((cantidad == null) ? 0 : cantidad.hashCode());
 		result = prime * result + ((nombreIngrediente == null) ? 0 : nombreIngrediente.hashCode());
 		return result;
 	}
@@ -55,7 +57,10 @@ public class Ingrediente implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Ingrediente other = (Ingrediente) obj;
-		if (Float.floatToIntBits(cantidad) != Float.floatToIntBits(other.cantidad))
+		if (cantidad == null) {
+			if (other.cantidad != null)
+				return false;
+		} else if (!cantidad.equals(other.cantidad))
 			return false;
 		if (nombreIngrediente == null) {
 			if (other.nombreIngrediente != null)
@@ -64,7 +69,8 @@ public class Ingrediente implements Serializable {
 			return false;
 		return true;
 	}
-	
+
+
 	public Receta getReceta() {
 		return receta;
 	}
@@ -80,10 +86,10 @@ public class Ingrediente implements Serializable {
 	public void setNombreIngrediente(String nombreIngrediente) {
 		this.nombreIngrediente = nombreIngrediente;
 	}
-	public float getCantidad() {
+	public String getCantidad() {
 		return cantidad;
 	}
-	public void setCantidad(float cantidad) {
+	public void setCantidad(String cantidad) {
 		this.cantidad = cantidad;
 	}
 
