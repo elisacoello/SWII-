@@ -2,12 +2,16 @@ package interfaz;
 
 import java.util.Scanner;
 
+import javax.xml.bind.JAXBException;
+
+import pojos.Recetario;
 import xml.XMLTest;
 
 public class Interfaz {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws JAXBException {
 		int opcion = 0;
+		Recetario rec = new Recetario();
 		XMLTest xml = new XMLTest();
 		while(opcion!=11) {
 			System.out.println("Bienvenido a su recetario\n" + "¿Qué desea hacer?\n");
@@ -29,6 +33,9 @@ public class Interfaz {
 			
 			switch(opcion) {
 			case(1):
+				System.out.println("Iniciando recetario por defecto...\n");
+				rec = xml.inicializarRecetario();
+				System.out.println("Importación correcta\n");
 				break;
 			case(2):
 				break;
@@ -47,6 +54,7 @@ public class Interfaz {
 			case(9):
 				break;
 			case(10):
+				System.out.println(rec);
 				break;
 			default:
 				System.out.println("Opción no válida\n");
@@ -54,7 +62,6 @@ public class Interfaz {
 			
 				
 			}
-			entrada.close();
 		}
 
 	}

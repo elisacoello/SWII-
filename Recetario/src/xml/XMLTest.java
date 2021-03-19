@@ -103,19 +103,14 @@ public class XMLTest {
 		//System.out.println(rec1.toString());
 	}
 	
-	/*
-	private static Empleado randomEmpleado() {
-		String nombre = randomString(empleadosNombres);
-		String apellido = randomString(empleadosApellidos);
-		int dia = (int) (Math.random() * 30);
-		double sueldo = (double) (18000 + Math.random() * 5000);
-		return new Empleado(contador++, nombre, apellido, "1990-01-"+dia, sueldo);
+	
+	public Recetario  inicializarRecetario() throws JAXBException {
+		JAXBContext jaxbC = JAXBContext.newInstance(Recetario.class);
+		Unmarshaller jaxbU = jaxbC.createUnmarshaller();
+		File XMLfile = new File("./recursos/Recetario.xml");
+		Recetario rec1 = (Recetario) jaxbU.unmarshal(XMLfile);
+		return rec1;
 	}
 	
-	private static String randomString(String[] array) {
-		int index = (int) (Math.random() * array.length);
-		return array[index];
-	}
-	*/
 }
 
