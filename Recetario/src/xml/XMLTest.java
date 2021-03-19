@@ -20,9 +20,13 @@ public class XMLTest {
 	public static void main(String[] args) throws JAXBException, IOException {
 		MyLogger.setupFromFile();
 		Recetario rec = generarRecetario();
+		Recetario rec2 = generarRecetario2();
+		
 		LOGGER.warning("Mensaje de warning");
-		//marshalling(rec);
-		unMarshalling();
+		marshalling(rec);
+		marshalling(rec2);
+		
+		//unMarshalling();
 	}
 	
 	private static Recetario generarRecetario(){
@@ -46,6 +50,29 @@ public class XMLTest {
 		
 		return recetario;
 	}
+	
+	private static Recetario generarRecetario2(){
+		Recetario recetario = new Recetario();
+		
+		Receta receta = new Receta();
+		receta.setNombreReceta("Ensalada de maiz");
+		receta.setInstrucciones("Cocinar el maiz");
+		receta.setDificultad("facil");
+		receta.setTipo("mediterranea");
+		ArrayList<Ingrediente> ingredientes = new ArrayList<>(); 
+		Ingrediente ingrediente = new Ingrediente();
+		
+		ingrediente.setCantidad("0");
+		ingrediente.setNombreIngrediente("Maiz");
+		ingrediente.setReceta(receta);
+				
+		ingredientes.add(ingrediente);
+		receta.setIngredientes(ingredientes);
+		recetario.addReceta(receta);
+		
+		return recetario;
+	}
+	
 	private static void marshalling(Recetario rec) throws JAXBException {
 		// Creamos el JAXBContext
 		JAXBContext jaxbC = JAXBContext.newInstance(Recetario.class);
