@@ -1,5 +1,6 @@
 package interfaz;
 
+import java.io.File;
 import java.util.Scanner;
 
 import javax.xml.bind.JAXBException;
@@ -11,6 +12,8 @@ public class Interfaz {
 
 	public static void main(String[] args) throws JAXBException {
 		int opcion = 0;
+		Scanner entrada;
+		entrada = new Scanner(System.in);
 		Recetario rec = new Recetario();
 		XMLTest xml = new XMLTest();
 		while(opcion!=11) {
@@ -27,8 +30,7 @@ public class Interfaz {
 			System.out.println("10. Mostrar todas las recetas\n");
 			System.out.println("11. Salir\n");
 			
-			Scanner entrada;
-			entrada = new Scanner(System.in);
+			
 			opcion = entrada.nextInt();
 			
 			switch(opcion) {
@@ -38,6 +40,9 @@ public class Interfaz {
 				System.out.println("Importación correcta\n");
 				break;
 			case(2):
+				System.out.println("Introduzca la ruta del fichero a importar\n");
+				String ruta = entrada.nextLine();
+				rec = xml.importarRecetario(ruta);
 				break;
 			case(3):
 				break;
@@ -63,6 +68,7 @@ public class Interfaz {
 				
 			}
 		}
+		entrada.close();
 
 	}
 

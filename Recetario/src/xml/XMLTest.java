@@ -112,5 +112,13 @@ public class XMLTest {
 		return rec1;
 	}
 	
+	public Recetario importarRecetario(String ruta) throws JAXBException {
+		JAXBContext jaxbC = JAXBContext.newInstance(Recetario.class);
+		Unmarshaller jaxbU = jaxbC.createUnmarshaller();
+		File fichero = new File(ruta);
+		Recetario rec1 = (Recetario) jaxbU.unmarshal(fichero);
+		return rec1;
+	}
+	
 }
 
