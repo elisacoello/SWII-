@@ -90,8 +90,9 @@ public class Ingrediente implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Ingrediente [nombreIngrediente=" + nombreIngrediente + ", cantidad=" + cantidad + "]";
+		return "\n\tIngrediente: [nombreIngrediente=" + nombreIngrediente + ", cantidad=" + cantidad + "]";
 	}
+	
 	
 	
 	

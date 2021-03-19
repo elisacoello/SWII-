@@ -39,5 +39,12 @@ public class Recetario implements Serializable{
 	public void removeReceta(Receta r) {
 		recetas.remove(r);
 	}
+
+	@Override
+	public String toString() {
+		return "Recetario:" + recetas.toString();
+	}
+	
+	
 	
 }

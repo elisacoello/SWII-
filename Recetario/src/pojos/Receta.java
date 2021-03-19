@@ -98,6 +98,11 @@ public class Receta implements Serializable {
 	}
 	
 	
+	@Override
+	public String toString() {
+		return "\n\nReceta:"+ "\n (dificultad= " + dificultad + ", tipo= " + tipo + ")" +"\n nombreReceta= " + nombreReceta
+				+ "\n ingredientes:" + ingredientes + "\n instrucciones= " + instrucciones;
+	}
 	
 	
 	

@@ -20,8 +20,9 @@ public class XMLTest {
 		MyLogger.setupFromFile();
 		Recetario rec = generarRecetario();
 		LOGGER.warning("Mensaje de warning");
-		marshalling(rec);
+		//marshalling(rec);
 		//unMarshalling();
+		System.out.println(rec.toString());
 	}
 	
 	private static Recetario generarRecetario(){
@@ -60,20 +61,22 @@ public class XMLTest {
 		// Escribiendo por pantalla
 		//jaxbM.marshal(book, System.out);
 	}
-	/*
+	
 	private static void unMarshalling() throws JAXBException {
 		// Creamos el JAXBContext
-		JAXBContext jaxbC = JAXBContext.newInstance(Empleado.class);
+		JAXBContext jaxbC = JAXBContext.newInstance(Recetario.class);
 		// Creamos el JAXBMarshaller
 		Unmarshaller jaxbU = jaxbC.createUnmarshaller();
 		// Leyendo un fichero
-		File XMLfile = new File("./xml/Empleado1.xml");
+		File XMLfile = new File("./xml/Recetario1.xml");
 		// Creando el objeto
-		Empleado empl1 = (Empleado) jaxbU.unmarshal(XMLfile);
+		Recetario rec1 = (Recetario) jaxbU.unmarshal(XMLfile);
 		// Escribiendo por pantalla el objeto
-		System.out.println(empl1);
+		System.out.println(rec1);
+		//System.out.println(rec1.toString());
 	}
 	
+	/*
 	private static Empleado randomEmpleado() {
 		String nombre = randomString(empleadosNombres);
 		String apellido = randomString(empleadosApellidos);
