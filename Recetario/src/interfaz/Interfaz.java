@@ -1,16 +1,18 @@
 package interfaz;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 import javax.xml.bind.JAXBException;
+import javax.xml.xquery.XQException;
 
 import pojos.Recetario;
+import xml.ImportarPersona;
 import xml.XMLTest;
-
 public class Interfaz {
 
-	public static void main(String[] args) throws JAXBException {
+	public static void main(String[] args) throws JAXBException, IOException, XQException {
 		int opcion = 0;
 		Scanner entrada;
 		entrada = new Scanner(System.in);
@@ -31,7 +33,7 @@ public class Interfaz {
 			System.out.println("11. Salir\n");
 			
 			
-			opcion = entrada.nextInt();
+			opcion = entrada.nextInt();	
 			
 			switch(opcion) {
 			case(1):
@@ -45,8 +47,16 @@ public class Interfaz {
 				rec = xml.importarRecetario(ruta);
 				break;
 			case(3):
+				xml.exportarRecetario();
+				System.out.println("Exportación correcta\n");
 				break;
 			case(4):
+				
+				Interfaz.main(args);
+				System.out.println(opcion);
+				ImportarPersona.main(args);
+			
+				
 				break;
 			case(5):
 				break;

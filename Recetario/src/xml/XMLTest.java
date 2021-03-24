@@ -1,6 +1,8 @@
 package xml;
 
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Logger;
@@ -53,22 +55,41 @@ public class XMLTest {
 	
 	private static Recetario generarRecetario2(){
 		Recetario recetario = new Recetario();
-		
+				
 		Receta receta = new Receta();
+		Receta receta2 = new Receta();
+				
 		receta.setNombreReceta("Ensalada de maiz");
 		receta.setInstrucciones("Cocinar el maiz");
 		receta.setDificultad("facil");
 		receta.setTipo("mediterranea");
+		
+		receta2.setNombreReceta("Ensalada de puerro");
+		receta2.setInstrucciones("Cocinar el puerro");
+		receta2.setDificultad("media");
+		receta2.setTipo("Arabe");
+		
+		
+		
 		ArrayList<Ingrediente> ingredientes = new ArrayList<>(); 
 		Ingrediente ingrediente = new Ingrediente();
 		
+		ArrayList<Ingrediente> ingredientes2 = new ArrayList<>(); 
+		Ingrediente ingrediente2 = new Ingrediente();
+		
 		ingrediente.setCantidad("0");
 		ingrediente.setNombreIngrediente("Maiz");
+		ingrediente2.setCantidad("2");
+		ingrediente2.setNombreIngrediente("puerro");
 		ingrediente.setReceta(receta);
-				
 		ingredientes.add(ingrediente);
 		receta.setIngredientes(ingredientes);
+		ingredientes2.add(ingrediente2);
+		receta2.setIngredientes(ingredientes2);
+		ingrediente2.setReceta(receta2);		
+	
 		recetario.addReceta(receta);
+		recetario.addReceta(receta2);
 		
 		return recetario;
 	}
@@ -83,7 +104,7 @@ public class XMLTest {
 		jaxbM.setProperty("com.sun.xml.bind.xmlHeaders", "\n<!DOCTYPE recetario SYSTEM \"DTD.dtd\">");
 		//jaxbM.setProperty("com.sun.xml.bind.xmlDeclaration", false);
 		// Escribiendo en un fichero
-		File XMLfile = new File("./recursos/Recetariobaby.xml");
+		File XMLfile = new File("./recursos/Recetario.xml");
 		jaxbM.marshal(rec, XMLfile);
 		// Escribiendo por pantalla
 		//jaxbM.marshal(book, System.out);
@@ -120,5 +141,26 @@ public class XMLTest {
 		return rec1;
 	}
 	
+	public void exportarRecetario() throws IOException {
+	
+		FileReader fr = new FileReader("./recursos/Recetario.xml");
+		
+		FileWriter fw = new FileWriter("./recursos/Exportar.xml");
+		
+		String str = ""; 
+		   
+        int i; 
+		
+		while ((i = fr.read()) != -1) { 
+			  
+             // Storing every character in the string 
+             str += (char)i; 
+         } 
+		
+		fw.write(str);
+		
+		 fr.close(); 
+         fw.close(); 
+	}
 }
 

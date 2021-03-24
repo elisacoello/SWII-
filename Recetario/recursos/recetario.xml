@@ -1,222 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE recetario SYSTEM "DTD.dtd">
 <recetario>
-  <receta dificultad="facil" tipo="mediterranea">
-    <nombreReceta>Ensalada de maíz y pollo</nombreReceta>
-    <ingredientes>	
-      <ingrediente>
-        <nombreIngrediente> Maíz dulce </nombreIngrediente>
-		<cantidad>1 mazorca</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Pimentón</nombreIngrediente>
-		<cantidad>1/2 cucharada</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Comino</nombreIngrediente>
-		<cantidad>1/2 cucharada</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Prechuga de pollo</nombreIngrediente>
-		<cantidad>1 pechuga</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Lechuga</nombreIngrediente>
-		<cantidad>1 unidad</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Tomate</nombreIngrediente>
-		<cantidad>3 unidades</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Queso de cabra</nombreIngrediente>
-		<cantidad>30 gramos</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Aceite de oliva</nombreIngrediente>
-		<cantidad>Al gusto</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Pimienta</nombreIngrediente>
-		<cantidad>Al gusto</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Sal</nombreIngrediente>		
-		<cantidad>Al gusto</cantidad>
-      </ingrediente>
-    </ingredientes>
-    <instrucciones>
-      Cocinar el maíz con sal, alrededor de 15-20 minutos
-	  Cocinar a la plancha la pechuga de pollo
-	  Añadir las especias en la misma sartén y saltear 8-10 minutos
-	  Lavar la lechuca y cortar el pollo en tiras
-	  Lavar y cortar el tomate
-	  Colocar la lechuga con el maíz, el tomate y el pollo
-	  Añadir el queso de cabra y aliñar al gusto
-    </instrucciones>
-  </receta>
-  
-  <receta dificultad="media" tipo="mediterranea">
-    <nombreReceta>Crema de calabaza</nombreReceta>
-    <ingredientes>
-      <ingrediente>
-        <nombreIngrediente> Calabaza pelada </nombreIngrediente>
-		 <cantidad>500 gramos</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Eneldo</nombreIngrediente>
-		<cantidad>1 unidad</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Caldo de verduras</nombreIngrediente>
-		<cantidad>400-500ml</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Nata líquida</nombreIngrediente>
-       <cantidad>1 unidad</cantidad>
-      </ingrediente>
-    </ingredientes>
-    <instrucciones>
-      Colocar la calabaza en trozos en una cacelora y añadir el eneldo sin tallos
-	  Se añade el caldo de verduras
-	  Cuando empiece a hervir, se baja a temperatura suave durante alrededor de 20 minutos
-	  Cuando la calabaza este tierna, se saca y se tritura
-	  Listo para servir
-    </instrucciones>
-  </receta>
-  <receta dificultad="fácil" tipo="mediterranea">
-    <nombreReceta>San Jacobo casero</nombreReceta>
-    <ingredientes>
-      <ingrediente>
-        <nombreIngrediente> Jamon cocido en lonchas </nombreIngrediente>
-		<cantidad>150 gramos</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente> Queso cocido en lonchas </nombreIngrediente>
-		<cantidad>5 lonchas</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Harina</nombreIngrediente>
-		<cantidad>30 gramos</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Huevo</nombreIngrediente>
-		<cantidad>2 unidades</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Pan rallado</nombreIngrediente>
-		<cantidad>100 gramos</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>Aceite de oliva para freir</nombreIngrediente>
-		<cantidad></cantidad>
-     </ingrediente>
-    </ingredientes>
-    <instrucciones>
-      Cortar las lonchas de jamón en cuadrados de igual tamaño
-	  Cortar las lonchas de queso en cuadrados iguales 
-	  Cubrir las lonchas de queso con las de jamon y lo pasamos por harina, huevo batido y pan rallado
-	  Calentar una sarten con aceite y freir los san jacobos
-	  Listo para servir
-    </instrucciones>
-  </receta>
-  <receta dificultad="medio" tipo="mediterranea">
-    <nombreReceta>Salmon al horno</nombreReceta>
-    <ingredientes>
-      <ingrediente>
-        <nombreIngrediente> lomo de salmon </nombreIngrediente>
-		<cantidad>1 kilogramo</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente> patatas peladas</nombreIngrediente>
-		<cantidad>2 unidades</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>pimiento verde</nombreIngrediente>
-		<cantidad>1 unidad</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>cebolletas</nombreIngrediente>
-		<cantidad>2 unidades</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>tomates</nombreIngrediente>
-		<cantidad>2 unidades</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>vino blanco</nombreIngrediente>
-		<cantidad>Al gusto</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>aceite de oliva</nombreIngrediente>
-		<cantidad></cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>sal</nombreIngrediente>
-		<cantidad></cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>pimienta negra</nombreIngrediente>
-		<cantidad></cantidad>
-      </ingrediente>
-    </ingredientes>
-    <instrucciones>
-      Cortar las patatas, el pimiento, la cebolleta y el tomate en rodajas
-	  Distribuir todo en la bandeja de horno y sazonar. Añadir un poco de aceite, agua y vino blanco 
-	  Hornear a 190º durante 20 minutos
-	  Colocar el salmon en la bandeja
-	  Dejar que se cocine alrededor de unos 10 minutos en el horno
-    </instrucciones>
-  </receta>
-   <receta dificultad="medio" tipo="mediterranea">
-    <nombreReceta>Salmon al horno</nombreReceta>
-    <ingredientes>
-      <ingrediente>
-        <nombreIngrediente>arroz </nombreIngrediente>
-		<cantidad>400 gramos</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>zanahoria</nombreIngrediente>
-		<cantidad>1 unidad</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>gambas</nombreIngrediente>
-		<cantidad>150 gramos</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>guisantes</nombreIngrediente>
-		<cantidad>75 gramos</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>jamón de york</nombreIngrediente>
-		<cantidad>75 gramos</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>huevos</nombreIngrediente>
-		<cantidad>2 unidades</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>salsa de soja</nombreIngrediente>
-		<cantidad>20 ml</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>azucar</nombreIngrediente>
-		<cantidad>10 gramos</cantidad>
-	 </ingrediente>
-	 <ingrediente>
-		<nombreIngrediente>aceite de oliva</nombreIngrediente>
-		<cantidad>20 ml</cantidad>
-      </ingrediente>
-    </ingredientes>
-    <instrucciones>
-      Cortar la zanahoria en tacos pequeños y ponerla a cocer en una cacerola con agua
-	  Batir los huevos con sal y una cucharada de azucar preparando una tortilla francesa en una sarten con aceite de oliva
-	  Mientras en otro cazo, con agua ponemos el arroz a cocer 10 minutos.
-	  Mientras cuece cortamos el jamón
-	  Saltear las ga,bas en una sarten
-	  Una vez hecho esto, escurrimos el arroz y mezclamos todos los ingredientes. La salsa de soja se puede añadir de la misma manera o disponerla a parte	  
-    </instrucciones>
-  </receta>
-  
-  
-  
+    <receta dificultad="facil" tipo="mediterranea">
+        <nombreReceta>Ensalada de maiz</nombreReceta>
+        <ingredientes>
+            <ingrediente>
+                <nombreIngrediente>Maizz</nombreIngrediente>
+                <cantidad>0</cantidad>
+            </ingrediente>
+        </ingredientes>
+        <instrucciones>Cocinar el maiz</instrucciones>
+    </receta>
+    <receta dificultad="media" tipo="Arabe">
+        <nombreReceta>Ensalada de puerro</nombreReceta>
+        <ingredientes>
+            <ingrediente>
+                <nombreIngrediente>puerro</nombreIngrediente>
+                <cantidad>2</cantidad>
+            </ingrediente>
+        </ingredientes>
+        <instrucciones>Cocinar el puerro</instrucciones>
+    </receta>
 </recetario>
