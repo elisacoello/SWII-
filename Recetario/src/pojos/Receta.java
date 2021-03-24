@@ -40,6 +40,16 @@ public class Receta implements Serializable {
 		ingredientes = new ArrayList<>();
 	}
 
+	public Receta(String dificultad, String tipo, String nombreReceta, ArrayList<Ingrediente> ingredientes,
+			String instrucciones) {
+		super();
+		this.dificultad = dificultad;
+		this.tipo = tipo;
+		this.nombreReceta = nombreReceta;
+		this.ingredientes = ingredientes;
+		this.instrucciones = instrucciones;
+	}
+
 	public Recetario getRecetario() {
 		return recetario;
 	}

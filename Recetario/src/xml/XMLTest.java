@@ -94,7 +94,7 @@ public class XMLTest {
 		return recetario;
 	}
 	
-	private static void marshalling(Recetario rec) throws JAXBException {
+	public static  void marshalling(Recetario rec) throws JAXBException {
 		// Creamos el JAXBContext
 		JAXBContext jaxbC = JAXBContext.newInstance(Recetario.class);
 		// Creamos el JAXBMarshaller
