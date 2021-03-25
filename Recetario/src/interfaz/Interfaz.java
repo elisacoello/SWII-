@@ -28,6 +28,7 @@ public class Interfaz {
 		entrada = new Scanner(System.in);
 		Recetario rec = new Recetario();
 		Receta receta = new Receta();
+		Receta recete = new Receta();
 		XMLTest xml = new XMLTest();
 		while(opcion!=11) {
 			System.out.println("Bienvenido a su recetario\n" + "¿Qué desea hacer?\n");
@@ -53,21 +54,25 @@ public class Interfaz {
 				System.out.println("Importación correcta\n");
 				break;
 			case(2):
-				System.out.println("Introduzca el fichero a importar\n");
+				System.out.println("Introduzca el fichero del recetario a importar\n");
 				String ruta = br.readLine();
 				rec = xml.importarRecetario(ruta);
 				break;
 			case(3):
-				xml.marshalling(rec);
+				xml.exportarRecetario(rec);
 				System.out.println("Exportación correcta\n");
 				break;
 			case(4):
-				System.out.println("Introduzca el fichero a importar\n");
+				System.out.println("Introduzca el fichero con la receta a importar\n");
 				String ruta1 = br.readLine();
 				receta = xml.importarReceta(ruta1);
 				rec.addReceta(receta);
 				break;
 			case(5):
+				System.out.println("Introduce el nombre de la receta que quieres buscar\n");
+				String nombre = br.readLine();
+				recete = rec.buscarReceta(nombre);
+				xml.exportarReceta(recete);				
 				break;
 			case(6):
 				break;

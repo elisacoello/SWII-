@@ -39,7 +39,16 @@ public class Recetario implements Serializable{
 	public void removeReceta(Receta r) {
 		recetas.remove(r);
 	}
-
+	public Receta buscarReceta(String nombre) {
+		Receta resultado = null;
+		for(Receta receta: recetas) {
+			if(receta.getNombreReceta().equals(nombre)) {
+				resultado = receta;
+				break;
+			}
+		}
+		return resultado;
+	}
 	@Override
 	public String toString() {
 		return "Recetario:" + recetas.toString();
