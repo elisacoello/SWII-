@@ -57,7 +57,7 @@ public class Interfaz {
 				rec = xml.importarRecetario(ruta);
 				break;
 			case(3):
-				xml.exportarRecetario();
+				XMLTest.marshalling(rec);
 				System.out.println("Exportación correcta\n");
 				break;
 			case(4):
@@ -103,6 +103,9 @@ public class Interfaz {
 				break;
 			case(10):
 				System.out.println(rec);
+				break;
+			case(11):
+				System.out.println("Saliendo del recetario");
 				break;
 			default:
 				System.out.println("Opción no válida\n");

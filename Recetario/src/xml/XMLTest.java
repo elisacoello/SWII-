@@ -104,7 +104,7 @@ public class XMLTest {
 		jaxbM.setProperty("com.sun.xml.bind.xmlHeaders", "\n<!DOCTYPE recetario SYSTEM \"DTD.dtd\">");
 		//jaxbM.setProperty("com.sun.xml.bind.xmlDeclaration", false);
 		// Escribiendo en un fichero
-		File XMLfile = new File("./recursos/Recetario.xml");
+		File XMLfile = new File("./recursos/RecetarioBakano.xml");
 		jaxbM.marshal(rec, XMLfile);
 		// Escribiendo por pantalla
 		//jaxbM.marshal(book, System.out);
@@ -141,7 +141,7 @@ public class XMLTest {
 		return rec1;
 	}
 	
-	public void exportarRecetario() throws IOException {
+	public void exportarRecetario(Recetario rec) throws IOException {
 	
 		FileReader fr = new FileReader("./recursos/Recetario.xml");
 		
