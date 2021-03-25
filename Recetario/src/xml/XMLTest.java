@@ -25,8 +25,8 @@ public class XMLTest {
 		Recetario rec2 = generarRecetario2();
 		
 		LOGGER.warning("Mensaje de warning");
-		marshalling(rec);
-		marshalling(rec2);
+		marshalling1(rec);
+		marshalling1(rec2);
 		
 		//unMarshalling();
 	}
@@ -94,7 +94,22 @@ public class XMLTest {
 		return recetario;
 	}
 	
-	public static  void marshalling(Recetario rec) throws JAXBException {
+	public  void marshalling(Recetario rec) throws JAXBException {
+		// Creamos el JAXBContext
+		JAXBContext jaxbC = JAXBContext.newInstance(Recetario.class);
+		// Creamos el JAXBMarshaller
+		Marshaller jaxbM = jaxbC.createMarshaller();
+		// Formateo bonito
+		jaxbM.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,Boolean.TRUE);
+		jaxbM.setProperty("com.sun.xml.bind.xmlHeaders", "\n<!DOCTYPE recetario SYSTEM \"DTD.dtd\">");
+		//jaxbM.setProperty("com.sun.xml.bind.xmlDeclaration", false);
+		// Escribiendo en un fichero
+		File XMLfile = new File("./recursos/RecetarioBakano.xml");
+		jaxbM.marshal(rec, XMLfile);
+		// Escribiendo por pantalla
+		//jaxbM.marshal(book, System.out);
+	}
+	public static void marshalling1(Recetario rec) throws JAXBException {
 		// Creamos el JAXBContext
 		JAXBContext jaxbC = JAXBContext.newInstance(Recetario.class);
 		// Creamos el JAXBMarshaller
@@ -138,6 +153,14 @@ public class XMLTest {
 		Unmarshaller jaxbU = jaxbC.createUnmarshaller();
 		File fichero = new File(ruta);
 		Recetario rec1 = (Recetario) jaxbU.unmarshal(fichero);
+		return rec1;
+	}
+	
+	public Receta importarReceta(String ruta) throws JAXBException {
+		JAXBContext jaxbC = JAXBContext.newInstance(Receta.class);
+		Unmarshaller jaxbU = jaxbC.createUnmarshaller();
+		File fichero = new File(ruta);
+		Receta rec1 = (Receta) jaxbU.unmarshal(fichero);
 		return rec1;
 	}
 	
