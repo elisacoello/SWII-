@@ -1,7 +1,9 @@
 package interfaz;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -17,9 +19,10 @@ public class Interfaz {
 
 	public static void main(String[] args) throws JAXBException, IOException, XQException {
 		int opcion = 0;
-		int cerrojo = 0;
+		boolean cerrojo = true;
 		Ingrediente ingrediente = new Ingrediente();
 		ArrayList<Ingrediente> ingredientes = new ArrayList<Ingrediente>();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		Scanner entrada;
 		entrada = new Scanner(System.in);
@@ -61,31 +64,30 @@ public class Interfaz {
 				
 				System.out.println("Introduzca la receta que desea importar\n");
 				System.out.println("Introduzca la dificultad de la receta:\n");
-				String dificultad = entrada.nextLine();
+				String dificultad = br.readLine();
 				System.out.println("Introduzca el tipo de la receta:\n");
-				String tipo = entrada.nextLine();
+				String tipo = br.readLine();
 				System.out.println("Introduzca el nombre de la receta:\n");
-				String nombreReceta = entrada.nextLine();
+				String nombreReceta = br.readLine();
 				System.out.println("Introduce ingredientes\n");
 			
 				
-				while(cerrojo == 0) {
-					System.out.println("Introduce nombre de ingrediente (cuando haya terminado teclee fin):\n");
-					String nombreIngrediente = entrada.nextLine();
-					System.out.println(nombreIngrediente + "\n");
-					if(nombreIngrediente != "fin") {
-						ingrediente.setNombreIngrediente(nombreIngrediente);
-						System.out.println("Introduce cantidad\n");
-						String cantidad = entrada.nextLine();
-						ingrediente.setCantidad(cantidad);
-						ingredientes.add(ingrediente);
-					}
-					else {
-						cerrojo = 1;
+				while(cerrojo == true) {
+					System.out.println("Introduce nombre de ingrediente:\n");
+					String nombreIngrediente = br.readLine();
+					ingrediente.setNombreIngrediente(nombreIngrediente);
+					System.out.println("Introduce cantidad\n");
+					String cantidad = br.readLine();
+					ingrediente.setCantidad(cantidad);
+					ingredientes.add(ingrediente);
+					System.out.println("Has terminado de introducir ingredientes? (0 no| 1 si)\n");
+					int variable = entrada.nextInt();
+					if (variable == 1) {
+						break;
 					}
 				}
 				System.out.println("Introduzca las instrucciones de la receta:\n");
-				String instrucciones = entrada.nextLine();
+				String instrucciones = br.readLine();
 				Receta receta = new Receta(dificultad, tipo, nombreReceta, ingredientes, instrucciones);
 				rec.addReceta(receta);
 				XMLTest.marshalling(rec);	

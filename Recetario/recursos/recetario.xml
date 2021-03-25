@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
+<!DOCTYPE recetario SYSTEM "DTD.dtd">
 <recetario>
     <receta dificultad="facil" tipo="mediterranea">
         <nombreReceta>Ensalada de maiz</nombreReceta>
@@ -20,5 +20,33 @@
             </ingrediente>
         </ingredientes>
         <instrucciones>Cocinar el puerro</instrucciones>
+    </receta>
+    <receta dificultad="" tipo="facil arabe">
+        <nombreReceta>cuscus</nombreReceta>
+        <ingredientes>
+            <ingrediente>
+                <nombreIngrediente></nombreIngrediente>
+                <cantidad>manzana</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombreIngrediente></nombreIngrediente>
+                <cantidad>manzana</cantidad>
+            </ingrediente>
+        </ingredientes>
+        <instrucciones></instrucciones>
+    </receta>
+    <receta dificultad="facil" tipo="asturiana">
+        <nombreReceta>Fabada</nombreReceta>
+        <ingredientes>
+            <ingrediente>
+                <nombreIngrediente>Chorizo</nombreIngrediente>
+                <cantidad>100 gramos</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombreIngrediente>Chorizo</nombreIngrediente>
+                <cantidad>100 gramos</cantidad>
+            </ingrediente>
+        </ingredientes>
+        <instrucciones>Hay que cocer las judias y luego juntarlas con chorizo</instrucciones>
     </receta>
 </recetario>
