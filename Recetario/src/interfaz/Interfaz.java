@@ -8,16 +8,23 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import javax.xml.bind.JAXBException;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xquery.XQException;
+
+import org.xml.sax.SAXException;
 
 import pojos.Ingrediente;
 import pojos.Receta;
 import pojos.Recetario;
 import xml.ImportarPersona;
+import xml.RecetarioXPath;
+import xml.RecetarioXQuery;
+import xml.Validar_DTD;
 import xml.XMLTest;
 public class Interfaz {
 
-	public static void main(String[] args) throws JAXBException, IOException, XQException {
+	public static void main(String[] args) throws JAXBException, IOException, XQException, XPathExpressionException, SAXException, ParserConfigurationException {
 		int opcion = 0;
 		boolean cerrojo = true;
 		Ingrediente ingrediente = new Ingrediente();
@@ -30,6 +37,9 @@ public class Interfaz {
 		Receta receta = new Receta();
 		Receta recete = new Receta();
 		XMLTest xml = new XMLTest();
+		RecetarioXQuery xquery = new RecetarioXQuery();
+		RecetarioXPath xpath = new RecetarioXPath();
+		Validar_DTD val_dtd = new Validar_DTD();
 		while(opcion!=11) {
 			System.out.println("Bienvenido a su recetario\n" + "¿Qué desea hacer?\n");
 			System.out.println("1. Inicializar recetario\n");
@@ -39,7 +49,9 @@ public class Interfaz {
 			System.out.println("5. Exportar una receta\n");
 			System.out.println("6. Validar XML con DTD\n");
 			System.out.println("7. Sentencias XPath\n");
+			System.out.println("77. Sentencias XPath predefinida\n");
 			System.out.println("8. Sentencias XQuery\n");
+			System.out.println("88. Sentencia XQuery predefinida\n");
 			System.out.println("9. Añadir receta por consola\n");
 			System.out.println("10. Mostrar todas las recetas\n");
 			System.out.println("11. Salir\n");
@@ -75,11 +87,47 @@ public class Interfaz {
 				xml.exportarReceta(recete);				
 				break;
 			case(6):
+				System.out.println("Introduzca el xml a validar por el DTD\n");
+				String rutaXml = br.readLine();
+				val_dtd.ejecutarValidador(rutaXml);
 				break;
+			case(66):
+				//Elisa
+				//Cambiar el mensaje aquí y arriba en la descripción de las funcionesalgo como "XQUERY - OBTENER.... y lo que obtenga la query.
+				//Hacer lo mismo con XPath
+				System.out.println("Ejecutando Validador XML por la cara");
+				String rutaxml = "./recursos/recetario_para_DTD.xml";
+				val_dtd.ejecutarValidador(rutaxml);
+				break;
+				
 			case(7):
+				System.out.println("Introduzca la sentencia XPath");
+				String sentencia_xPath = br.readLine();
+				xpath.ejecutarXPath(sentencia_xPath);
+				break;
+				
+			case(77):
+				//Elisa
+				//Cambiar el mensaje aquí y arriba en la descripción de las funcionesalgo como "XQUERY - OBTENER.... y lo que obtenga la query.
+				//Hacer lo mismo con XPath
+				System.out.println("Ejecutando XPath por la cara");
+				String sentencia = "//receta[@dificultad='facil']";
+				xpath.ejecutarXPath(sentencia);
 				break;
 			case(8):
+				System.out.println("Introduzca el fichero xquery");
+				String ruta_xquery = br.readLine();
+				xquery.ejecutarXQuery(ruta_xquery);
 				break;
+			case(88):
+				//Elisa
+				//Cambiar el mensaje aquí y arriba en la descripción de las funcionesalgo como "XQUERY - OBTENER.... y lo que obtenga la query.
+				//Hacer lo mismo con XPath
+				System.out.println("Ejecutando XQuery por la cara");
+				
+				xquery.ejecutarXQuery("./recursos/prueba_XQuery.xq");
+				break;
+				
 			case(9):
 				System.out.println("Introduzca la receta que desea importar\n");
 				System.out.println("Introduzca la dificultad de la receta:\n");
@@ -122,6 +170,9 @@ public class Interfaz {
 			
 				
 			}
+			
+			
+			
 		}
 		entrada.close();
 

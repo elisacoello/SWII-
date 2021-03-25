@@ -1,8 +1,8 @@
 <!ELEMENT recetario (receta*)>
-<!ELEMENT receta (nombreReceta,ingredientes,instrucciones)>
+<!ELEMENT receta (nombreReceta,ingredientes, instrucciones)>
 <!ELEMENT nombreReceta (#PCDATA)>
 <!ELEMENT ingredientes (ingrediente+)>
-<!ELEMENT ingrediente (nombreIngrediente,cantidad)>
+<!ELEMENT ingrediente (nombreIngrediente, cantidad)>
 <!ELEMENT instrucciones (#PCDATA)>
 <!ELEMENT nombreIngrediente (#PCDATA)>
 <!ELEMENT cantidad (#PCDATA)>

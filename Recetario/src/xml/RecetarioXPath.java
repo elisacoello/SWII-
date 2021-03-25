@@ -16,25 +16,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 public class RecetarioXPath {
-	  public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, XPathExpressionException {
-	    	//Construir el DOM
-	    	DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-	    	factory.setNamespaceAware(true);
-	    	DocumentBuilder builder = factory.newDocumentBuilder();
-	    	Document doc = builder.parse("./recursos/recetario.xml"); //org.w3c.dom.Document
-
-	    	//Crear XPath
-	    	XPathFactory xpathfactory = XPathFactory.newInstance();
-	    	XPath xpath = xpathfactory.newXPath(); 
-
-	    	// Obtener todos los títulos con un atributo “dificultad” con valor ‘facil’:
-	    	String xPathtxt = "//receta[@dificultad='facil']";
-	    	XPathExpression expr = xpath.compile(xPathtxt); //javax.xml.xpath.XPathExpression
-	    	Object result = expr.evaluate(doc, XPathConstants.NODESET);
-	    	NodeList nodes = (NodeList) result; //org.w3c.dom.NodeList
-	    	for (int i = 0; i < nodes.getLength(); i++) {
-	    	    System.out.println(processNode(nodes.item(i)));
-	    	}
+	  public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, XPathExpressionException{ 
 
 	    }
 	    
@@ -49,4 +31,26 @@ public class RecetarioXPath {
 	            data += node.getNodeValue();}
 	        return data;
 	    }
+	    
+	    public void ejecutarXPath(String sentencia) throws XPathExpressionException, SAXException, IOException, ParserConfigurationException {
+    	//Construir el DOM
+    	DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+    	factory.setNamespaceAware(true);
+    	DocumentBuilder builder = factory.newDocumentBuilder();
+    	Document doc = builder.parse("./recursos/recetario.xml"); //org.w3c.dom.Document
+
+    	//Crear XPath
+    	XPathFactory xpathfactory = XPathFactory.newInstance();
+    	XPath xpath = xpathfactory.newXPath(); 
+
+    	// Obtener todos los títulos con un atributo “dificultad” con valor ‘facil’:
+    	XPathExpression expr = xpath.compile(sentencia); //javax.xml.xpath.XPathExpression
+    	Object result = expr.evaluate(doc, XPathConstants.NODESET);
+    	NodeList nodes = (NodeList) result; //org.w3c.dom.NodeList
+    	for (int i = 0; i < nodes.getLength(); i++) {
+    	    System.out.println(processNode(nodes.item(i)));
+    	}
+    	  
+	    
+}
 }

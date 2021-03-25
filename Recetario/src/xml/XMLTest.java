@@ -177,8 +177,8 @@ public class XMLTest {
 		Receta rec1 = (Receta) jaxbU.unmarshal(fichero);
 		return rec1;
 	}
-	
 
+	
 		
 	
 	/*public void exportarRecetario(Recetario rec) throws IOException {

@@ -15,7 +15,11 @@ import javax.xml.xquery.XQResultSequence;
 
 public class RecetarioXQuery {
 	public static void main(String[] args) throws XQException {
-		File queryFile = new File("./recursos/prueba_XQuery.xq");
+		
+		
+	}
+	public void ejecutarXQuery(String ruta) throws XQException{
+		File queryFile = new File(ruta);
 
 		XQDataSource xqjd = new SaxonXQDataSource();
 		XQConnection xqjc = xqjd.getConnection();
@@ -33,5 +37,8 @@ public class RecetarioXQuery {
 		result.close();
 		exp.close();
 		xqjc.close();
+		
+		
 	}
+		
 }
