@@ -52,8 +52,8 @@ public class Interfaz {
 				System.out.println("Importación correcta\n");
 				break;
 			case(2):
-				System.out.println("Introduzca la ruta del fichero a importar\n");
-				String ruta = entrada.nextLine();
+				System.out.println("Introduzca el fichero a importar\n");
+				String ruta = br.readLine();
 				rec = xml.importarRecetario(ruta);
 				break;
 			case(3):
@@ -61,7 +61,16 @@ public class Interfaz {
 				System.out.println("Exportación correcta\n");
 				break;
 			case(4):
-				
+				break;
+			case(5):
+				break;
+			case(6):
+				break;
+			case(7):
+				break;
+			case(8):
+				break;
+			case(9):
 				System.out.println("Introduzca la receta que desea importar\n");
 				System.out.println("Introduzca la dificultad de la receta:\n");
 				String dificultad = br.readLine();
@@ -91,16 +100,6 @@ public class Interfaz {
 				Receta receta = new Receta(dificultad, tipo, nombreReceta, ingredientes, instrucciones);
 				rec.addReceta(receta);
 				XMLTest.marshalling(rec);	
-				break;
-			case(5):
-				break;
-			case(6):
-				break;
-			case(7):
-				break;
-			case(8):
-				break;
-			case(9):
 				break;
 			case(10):
 				System.out.println(rec);
