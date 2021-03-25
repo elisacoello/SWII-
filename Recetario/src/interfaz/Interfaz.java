@@ -65,6 +65,7 @@ public class Interfaz {
 				System.out.println("Introduzca el fichero a importar\n");
 				String ruta1 = br.readLine();
 				receta = xml.importarReceta(ruta1);
+				rec.addReceta(receta);
 				break;
 			case(5):
 				break;
