@@ -1,2 +1,2 @@
-for $x at $i in doc("./recursos/xquery_ejemplo1.xml")/recetario/receta/nombreReceta
+for $x at $i in doc("./recursos/recetario.xml")/recetario/receta/nombreReceta
 return <receta>{$i}. {data($x)}</receta>

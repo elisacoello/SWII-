@@ -14,10 +14,7 @@ import javax.xml.xquery.XQPreparedExpression;
 import javax.xml.xquery.XQResultSequence;
 
 public class RecetarioXQuery {
-	public static void main(String[] args) throws XQException {
-		
-		
-	}
+	
 	public void ejecutarXQuery(String ruta) throws XQException{
 		File queryFile = new File(ruta);
 

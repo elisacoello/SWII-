@@ -16,9 +16,6 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 public class RecetarioXPath {
-	  public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, XPathExpressionException{ 
-
-	    }
 	    
 	    public static String processNode(Node node) {
 	        String data = "";
@@ -43,7 +40,7 @@ public class RecetarioXPath {
     	XPathFactory xpathfactory = XPathFactory.newInstance();
     	XPath xpath = xpathfactory.newXPath(); 
 
-    	// Obtener todos los títulos con un atributo “dificultad” con valor ‘facil’:
+    	// Obtener todos los títulos con un atributo “dificultad” con valor ‘fácil’:
     	XPathExpression expr = xpath.compile(sentencia); //javax.xml.xpath.XPathExpression
     	Object result = expr.evaluate(doc, XPathConstants.NODESET);
     	NodeList nodes = (NodeList) result; //org.w3c.dom.NodeList

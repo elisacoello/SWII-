@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE recetario SYSTEM "DTD.dtd">
 <recetario>
-    <receta dificultad="facil" tipo="mediterranea">
+    <receta dificultad="fácil" tipo="mediterranea">
         <nombreReceta>Ensalada de maiz</nombreReceta>
         <ingredientes>
             <ingrediente>
@@ -21,7 +21,7 @@
         </ingredientes>
         <instrucciones>Cocinar el puerro</instrucciones>
     </receta>
-    <receta dificultad="" tipo="facil arabe">
+    <receta dificultad="" tipo="fácil arabe">
         <nombreReceta>cuscus</nombreReceta>
         <ingredientes>
             <ingrediente>
@@ -35,7 +35,7 @@
         </ingredientes>
         <instrucciones></instrucciones>
     </receta>
-    <receta dificultad="facil" tipo="asturiana">
+    <receta dificultad="fácil" tipo="asturiana">
         <nombreReceta>Fabada</nombreReceta>
         <ingredientes>
             <ingrediente>

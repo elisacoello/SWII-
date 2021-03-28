@@ -1,7 +1,6 @@
 package interfaz;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ import org.xml.sax.SAXException;
 import pojos.Ingrediente;
 import pojos.Receta;
 import pojos.Recetario;
-import xml.ImportarPersona;
 import xml.RecetarioXPath;
 import xml.RecetarioXQuery;
 import xml.Validar_DTD;
@@ -27,9 +25,8 @@ public class Interfaz {
 	public static void main(String[] args) throws JAXBException, IOException, XQException, XPathExpressionException, SAXException, ParserConfigurationException {
 		int opcion = 0;
 		boolean cerrojo = true;
-		Ingrediente ingrediente = new Ingrediente();
-		ArrayList<Ingrediente> ingredientes = new ArrayList<Ingrediente>();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
 		
 		Scanner entrada;
 		entrada = new Scanner(System.in);
@@ -111,7 +108,7 @@ public class Interfaz {
 				//Cambiar el mensaje aquí y arriba en la descripción de las funcionesalgo como "XQUERY - OBTENER.... y lo que obtenga la query.
 				//Hacer lo mismo con XPath
 				System.out.println("Ejecutando XPath por la cara");
-				String sentencia = "//receta[@dificultad='facil']";
+				String sentencia = "//receta[@dificultad='fácil']";
 				xpath.ejecutarXPath(sentencia);
 				break;
 			case(8):
@@ -129,6 +126,7 @@ public class Interfaz {
 				break;
 				
 			case(9):
+				ArrayList<Ingrediente> ingredientes = new ArrayList<Ingrediente>();
 				System.out.println("Introduzca la receta que desea importar\n");
 				System.out.println("Introduzca la dificultad de la receta:\n");
 				String dificultad = br.readLine();
@@ -137,14 +135,15 @@ public class Interfaz {
 				System.out.println("Introduzca el nombre de la receta:\n");
 				String nombreReceta = br.readLine();
 				System.out.println("Introduce ingredientes\n");
-			
-				
+				String nombreIngrediente;
+				String cantidad;
 				while(cerrojo == true) {
+					Ingrediente ingrediente = new Ingrediente();
 					System.out.println("Introduce nombre de ingrediente:\n");
-					String nombreIngrediente = br.readLine();
+					nombreIngrediente = br.readLine();
 					ingrediente.setNombreIngrediente(nombreIngrediente);
 					System.out.println("Introduce cantidad\n");
-					String cantidad = br.readLine();
+					cantidad = br.readLine();
 					ingrediente.setCantidad(cantidad);
 					ingredientes.add(ingrediente);
 					System.out.println("Has terminado de introducir ingredientes? (0 no| 1 si)\n");
