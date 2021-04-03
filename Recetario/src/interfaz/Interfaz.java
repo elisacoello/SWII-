@@ -89,10 +89,7 @@ public class Interfaz {
 				val_dtd.ejecutarValidador(rutaXml);
 				break;
 			case(66):
-				//Elisa
-				//Cambiar el mensaje aquí y arriba en la descripción de las funcionesalgo como "XQUERY - OBTENER.... y lo que obtenga la query.
-				//Hacer lo mismo con XPath
-				System.out.println("Ejecutando Validador XML por la cara");
+				System.out.println("Ejecutando Validador XML");
 				String rutaxml = "./recursos/recetario_para_DTD.xml";
 				val_dtd.ejecutarValidador(rutaxml);
 				break;
@@ -104,10 +101,7 @@ public class Interfaz {
 				break;
 				
 			case(77):
-				//Elisa
-				//Cambiar el mensaje aquí y arriba en la descripción de las funcionesalgo como "XQUERY - OBTENER.... y lo que obtenga la query.
-				//Hacer lo mismo con XPath
-				System.out.println("Ejecutando XPath por la cara");
+				System.out.println("Ejecutando consulta XPath que muestra las recetas correspondientes a dificultad fácil");
 				String sentencia = "//receta[@dificultad='fácil']";
 				xpath.ejecutarXPath(sentencia);
 				break;
@@ -117,10 +111,7 @@ public class Interfaz {
 				xquery.ejecutarXQuery(ruta_xquery);
 				break;
 			case(88):
-				//Elisa
-				//Cambiar el mensaje aquí y arriba en la descripción de las funcionesalgo como "XQUERY - OBTENER.... y lo que obtenga la query.
-				//Hacer lo mismo con XPath
-				System.out.println("Ejecutando XQuery por la cara");
+				System.out.println("Ejecutando XQuery que busca los nombres de todas las recetas disponibles");
 				
 				xquery.ejecutarXQuery("./recursos/prueba_XQuery.xq");
 				break;
